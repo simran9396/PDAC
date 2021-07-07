@@ -8,10 +8,22 @@
     <script>
         function setFullName(){
             var fName=document.getElementById("Firstname")
+            
+            var mName=document.getElementById("Middlename")
             var lName=document.getElementById("Lastname")
             var fulname=document.getElementById("Fullname")
-            fulname.value=fName.value+" "+lName.value;
+            fulname.value=fName.value+" "+mName.value+" "+lName.value;
             console.log(fulname.value)
+        }
+        function Clear(){
+            var clrfName=document.getElementById("Firstname")
+            clrfName.value=" "
+            var clrmName=document.getElementById("Middlename")
+            clrmName.value=" "
+            var clrlName=document.getElementById("Lastname")
+            clrlName.value=" "
+            var clrfulname=document.getElementById("Fullname")
+            clrfulname.value=" "
         }
     </script>
 </head>
@@ -22,17 +34,25 @@
     <hr>
     <h3>Personal info</h3>
     <br>
+    <br>
     <label>First Name:</label>
     <input type="text" id="Firstname">
     <br>
+    <br>
+    <label>Middle Name:</label>
+    <input type="text"  id="Middlename">
+    <br>
+    <br>
+    
     <label>Last Name:</label>
     <input type="text" id="Lastname">
-    <button onclick="setFullName()">Full Name</button>
-    <br>
+    <br>    
     <br>
     <label>Full Name:</label>
     <input type="text" id="Fullname">
     <hr>
+    <button onclick="setFullName()">Full Name</button>
+    <button onclick="Clear()"> Clear</button>
     
 </body>
 </html>
