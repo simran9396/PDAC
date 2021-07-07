@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input types</title>
+</head>
+<style>
+    form{
+        background-color: rgb(199, 226, 238);
+        width: 400px;
+        padding: 10px;
+        margin: 20px;
+    }
+</style>
+<!-- */inputtypes=
+1.date
+2.date time location
+3.url
+4.email
+5.file
+6.month
+7.color
+8.weel
+9.number-min,max,step 
+*/ -->
+<body>
+    <h1 style="color: cornflowerblue; ">input types </h1>
+    <form>
+        <label>Name:</label>
+        <input type="text"> 
+    </form>
+    <form>
+        <label>Passward:</label>
+        <input type="password" placeholder=" Enter Your Passward">
+    </form>
+    <form>
+        <label>Qualification:</label>
+        <input type="text">
+    </form>
+    <form>
+    <label>Gender:</label>
+    <input type="radio"name="gender" value="male">male
+    <input type="radio" name="gender" value="female">Female
+</form>
+<form >
+    <label>hobbies:</label>
+    <input type="checkbox" name="eating">eating
+    <input type="checkbox" name="coding">coding
+    <input type="checkbox" name="movie">movie
+</form>
+<form>
+    <label>DOB:</label>
+    <input type="date">
+
+</form>
+<form >
+    <label> URL:</label>
+    <input type="url">
+</form>
+<button type="button"
+    onclick="document.getElementById('demo').innerHTML=Date()"> Click me to display Date and time</button>
+    <div id="demo"></div>
+<button>Submit</button> <button>Cancel</button>
+    
+</body>
+</html>

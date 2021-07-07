@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game1</title>
+    <script>
+        var player="1"
+        function Game(id){
+            var objgame=document.getElementById(id)
+            var objPlayer=document.getElementById("player")
+            if(player==1){
+            objgame.style="background-color:blue;font-size:30px"
+            objPlayer.style="background-color:red;font-size:30px"
+
+            objgame.innerHTML="ME"
+            player=2
+            
+        } else{
+            objgame.style="background-color:red;font-size:30px"
+            objPlayer.style="background-color:blue;font-size:30px"
+
+            objPlayer.innerHTML="HE"
+            player=1
+
+        }
+        objPlayer.innerHTML="Player"+player;
+        }
+        function clrGame(){
+            var clrgame=document.getElementById()
+            clrgame=" "
+            console.log("i am clrGame")
+
+        }
+    </script>
+</head>
+<body>
+    <h1>Game</h1>
+    <h2><span id="player" style="color: darkmagenta;">Player1</span></h2>
+    <table border="2">
+        <tr>
+            <td><span id="1" onclick="Game('1')" style="color: rgb(253, 249, 249);font-size: 30px;">NO</span></td>
+            <td><span id="2"onclick="Game('2')" style="color: rgb(252, 248, 248);font-size: 30px;">NO</span></td>
+            <td><span id="3"onclick="Game('3')" style="color: rgb(248, 242, 242);font-size: 30px;">NO</span></td>
+            
+        </tr>
+        <tr>
+            <td><span id="4" onclick="Game('4')"style="color: rgb(252, 248, 248);font-size: 30px;">NO</span></td>
+            <td><span id="5" onclick="Game('5')"style="color: rgb(253, 252, 252);font-size: 30px;">NO</span></td>
+            <td><span id="6"onclick="Game('6')" style="color: rgb(250, 243, 243);font-size: 30px;">NO</span></td>
+
+            
+        </tr>
+        <tr>
+            <td><span id="7"onclick="Game('7')" style="color: rgb(248, 246, 246);font-size: 30px;">NO</span></td>
+            <td><span id="8"onclick="Game('8')" style="color: rgb(253, 246, 246);font-size: 30px;">NO</span></td>
+            <td><span id="9"onclick="Game('9')" style="color: rgb(243, 236, 236);font-size: 30px;">NO</span></td>
+             
+        </tr>
+    </table>
+    <br>
+    <br>
+    <button onclick="clrGame()">clear</button>
+    
+</body>
+</html>

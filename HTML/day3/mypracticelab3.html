@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button styling</title>
+    <script>
+        function changecolor1(){
+            var obj1=document.getElementById("s1")
+            var obj2=document.getElementById("s2")
+            obj1.style="background-color:pink"
+            obj2.style="background-color:yellow"
+        }
+        function changecolor2(){
+            var obj1=document.getElementById("s1")
+            var obj2=document.getElementById("s2")
+            obj1.style="background-color:red"
+            obj2.style="background-color:blue"
+        }
+        function changecolor3(){
+            var obj1=document.getElementById("s1")
+            var obj2=document.getElementById("s2")
+            obj1.style="background-color:orange"
+            obj2.style="background-color:teal"
+        }
+    </script>
+</head>
+<body>
+    <h1>
+        Theme Changing
+
+    </h1>
+    <br>
+    <h2>
+        <span id="s1" style="color: darkblue;">Pickup</span><span id="s2" style="color: darkmagenta;">Biz</span>
+    </h2>
+    <button onclick="changecolor1()">Theme1</button>
+    <button onclick="changecolor2()">Theme2</button>
+    <button onclick="changecolor3()">Theme3</button>
+</body>
+</html>
