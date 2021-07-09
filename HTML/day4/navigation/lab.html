@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<script>
+    function onclick(){
+        sessionStorage.setItem("username",document.getElementById("name").value)
+        sessionStorage.setItem("password",document.getElementById("pass").value)
+        sessionStorage.setItem("favcolor",document.getElementById("color").value)
+        getelement()
+
+    }
+    function getelement(){
+        document.getElementById("name").value=sessionStorage.getItem("username")
+        document.getElementById("pass").value=sessionStorage.getItem("password")
+        document.getElementById("color").value=sessionStorage.getItem("favcolor")
+        document.getElementById("body").style=`background-color:${sessionStorage.getItem("favcolor")}`
+    }
+
+</script>
+<style>
+
+    form{
+    width: 300px;
+    height: 500px;
+    margin: 50px auto;
+    border-radius: 30px;
+    padding: 15px;
+    text-align: justify;
+    background-color: grey;
+    background-size:cover
+    }
+    h1{
+        color: white;
+        text-align: center;
+        
+    }
+    
+</style>
+
+<body id="body" >
+    
+    
+    
+
+
+    <fieldset>
+        <legend>Registration-Form</legend>
+        <form  >
+    <h1 >Form </h1>
+    <label>Name:</label><br>
+    <input type="text" id="name"><br><br>
+    <label>Passward:</label><br>
+    <input type="password" placeholder="enter passward" id="pass"><br><br>
+    <label>Confirm Passward</label><br>
+    <input type="password" placeholder="confirm passward"><br><br>
+    <label>DOB:</label><br>
+    <input type="date"><br><br>
+    <label>Gender :</label>
+    <input type="radio" value="male" name="gender">Male
+    <input type="radio" value="female" name="gender">Female
+    <br><br>
+    <label>Hobbies:</label>
+    <input type="checkbox" name="music">Music
+    <input type="checkbox" name="coding">Coding
+    <input type="checkbox" name="movies">Movies
+    <br><br>
+    <label>changecolor</label>
+    <input type="color" id="color">
+    
+    <button onclick="onclick()">submit</button>
+    <button>cancel</button>
+</fieldset>
+
+</form>
+</div>
+</body>
+<script>
+    getelement()
+</script>
+</html>

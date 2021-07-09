@@ -4,58 +4,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>registration form</title>
 
 </head>
+<script>
+    function setStorevalues(){
+        var nameData=document.getElementById("name")
+        var namePass=document.getElementById("pass")
+        sessionStorage.setItem("userName",nameData.value)
+        sessionStorage.setItem("userPass",namePass.value)
+    }
+    function getStorevalues(){
+        var nameData=document.getElementById("name")
+        var namePass=document.getElementById("pass")
+        nameData.value=sessionStorage.getItem("userName")
+        namepass.value=sessionStorage.getItem("userPass")
+
+    }
+
+</script>
 <style>
+    body{
+        background-color:rgb(236, 242, 245)
+    }
 
     form{
     width: 300px;
-    height: 500px;
-    margin: 50px auto;
+    height: 600px;
+    
     border-radius: 30px;
     padding: 15px;
-    text-align: justify;
-    background-color: grey;
-    background-size:cover
+    text-align: center;
+    background-color: rgb(221, 214, 214);
+    background-size:cover;
+    background-image: url(../day4/images/pattern-3160023_1920.jpg);
+    margin: auto;
+    margin-top: 50px;
     }
     h1{
-        color: white;
+        color: rgb(31, 17, 17);
         text-align: center;
         
+    }
+    fieldset{
+        width: 500px;
+        height: 700px;
+        margin: 50px auto;
+        background-color: rgba(221, 220, 220,0.5);
+        font-size: 20px;
+        color: rgb(5, 44, 77);
+    }
+    marquee{
+        font-size: 30px;
+        color: rgb(19, 19, 20);
     }
     
 </style>
 
 <body >
-    
-    
-    
-
+    <marquee behavior="alternate"scrollamount="15%" direction="right" >Please fill the form</marquee>
+    <fieldset>
+        <legend>Registration-Form</legend>
 <form  >
-    <h1 >Form </h1>
+    <h1 >Details </h1>
     <label>Name:</label><br>
-    <input type="text"><br><br>
+    <input type="text" id="name"><br><br>
     <label>Passward:</label><br>
-    <input type="passward" placeholder="enter passward"><br><br>
+    <input type="password" placeholder="enter passward" id="pass"><br><br>
     <label>Confirm Passward</label><br>
-    <input type="passward" placeholder="confirm passward"><br><br>
-    <label>DOB:</label><br>
+    <input type="password" placeholder="confirm passward"><br><br>
+    <label>Age:</label><br>
     <input type="date"><br><br>
-    <label>Gender :</label>
+    <label>Gender :</label> 
     <input type="radio" value="male" name="gender">Male
     <input type="radio" value="female" name="gender">Female
     <br><br>
+    <label>Choose Color:</label>
+    <input type="color"><br><br>
     <label>Hobbies:</label>
     <input type="checkbox" name="music">Music
     <input type="checkbox" name="coding">Coding
     <input type="checkbox" name="movies">Movies
     <br><br>
     
-    <button>submit</button>
+    <button onclick="setStorevalues()">submit</button>
     <button>cancel</button>
 
 </form>
-</div>
+</fieldset>
 </body>
+<script>
+    getStorevalues()
+</script>
 </html>
