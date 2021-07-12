@@ -1,0 +1,24 @@
+nav{
+    background-color: black;
+    padding: 20px;
+    
+    display:flex;
+    
+    
+
+
+}
+a{
+    padding: 20px;
+    margin: 10px;
+   
+    font-size: 30px;
+    color: cornsilk;
+    text-decoration: none;
+    
+    
+}
+a:hover{
+    background-color: cornsilk;
+    color: black;
+}

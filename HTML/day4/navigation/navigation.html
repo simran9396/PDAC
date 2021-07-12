@@ -1,120 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>navigation</title>
-</head>
-<script>
-    function styles(){
-        var objbody=document.getElementById("body")
-        objbody.style=`background-color:${sessionStorage.getItem("favcolor")}`
+    <link rel="stylesheet" href="./navigation.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <script>
+    function open() {
+      document.getElementById("myButton");
+      location.href = "./inputtypes.html";
     }
-</script>
-<style>
- .background{
-        background-image: url(../images/desk-1081708_1920.jpg) ;
-        background-position: center;
-        background-size: cover;
-        object-fit: cover;
+  </script>
+  <style></style>
+  <body>
+    <div class="back">
+      <nav>
+        <img src="./new.gif" alt="" class="img" />
+        <a href="./inputtypes.html" id="login">Registration</a>
+        <a href="">Home</a>
+        <a href="./product.html">Services</a>
+        <a href="./aboutus.html">About us</a>
+        <a href="./Contactus.html">Contact us</a>
+        <button onclick="open()">login</button> <button>signup</button>
 
-        width: 100%;
-        height:100vh;
-        
-    }
-    footer{
-        background-color: black;
-        margin: 5px;
-        
-    }
-    h2{
-        color: white;
-    }
-    iframe{
-        width: 500px;
-        height: 400px;
-        padding: 20px;
-    }
-    
-    nav{
-        padding: 20px;
-        background-color: black;
-    }
-    a{
-        padding: 20px;
-        margin: 20px;
-        color: blanchedalmond;
-        text-decoration: none;
-    }
-    a:hover{
-        color:red;
-    }
-    div{
-        float: right;
-        color: white;
-       
-    }
-    h1{
-        text-align: center;
-        font-size: 60px;
-        margin: 200px auto;
-        
-    }
-    aside{
-        background-color: rgb(21, 24, 27);
-        width: 200px;
-        height: 500px;
-        padding: 20px;
-        text-align: center;
-        margin-top: -450px;
+        <!-- <label>User:</label> -->
+        <!-- <input type="text" id="User"> -->
+      </nav>
+      <marquee behavior="alternate" direction="right" style="font-size: 40px"
+        ><i class="fab fa-html5" style="padding: 30px; color: chocolate"></i
+        ><i class="fab fa-js" style="padding: 30px; color: darkgoldenrod"></i
+        ><i class="fab fa-node" style="padding: 30px; color: darkslateblue"></i
+        ><i
+          class="fab fa-react"
+          style="padding: 30px; color: rgb(13, 122, 155)"
+        ></i
+        ><i class="fab fa-npm" style="padding: 30px"></i
+        ><i class="fab fa-mdb" style="padding: 30px; color: red"></i
+        ><i class="fab fa-java" style="padding: 30px; color: black"></i
+        ><i class="fab fa-mixcloud" style="padding: 30px; color: blue"></i
+      ></marquee>
 
-    }
-    aside a{
-        color: rgb(187, 172, 172);
-        padding: 10px;
-        margin: 10px;
-        text-decoration: none;
-        display: block;
-    }
-     aside a:hover{
-        color: rgb(150, 124, 85);
-        background-color: rgb(194, 194, 219);
-        border-radius: 20px;
-    }
-</style>
-<body id="body">
-   <div class="background">
-        <nav>
-            <a href="../navigation/inputtypes.html">Registration</a>
-            <a href="">Home</a>
-            <a href="./product.html">Product</a>
-            <a href="./aboutus.html">About us</a>
-            <a href="./Contactus.html">Contact us</a>
-          <div>
-            <label>User:</label>
-            <input type="text">
-          </div>
-        </nav>
-        
-        <h1>Wel-Come</h1>
+      <div class="main">
         <aside>
-            <a href="">Servies</a>
-            <a href="">Our products</a>
-            <a href="">Our services</a>
-            <a href="">About Us</a>
-            <a href="">Feedback</a>
+          <a href="">Frontend Devp</a>
+          <a href="">Backend Devp</a>
+          <a href="">Fullstack Devp</a>
+          <a href="">Desktop Devp</a>
+          <a href="">Web Devp</a>
+          <a href="">Database Devp </a>
+          <a href="">mobile Devp</a>
+          <a href="">Cloud Computing</a>
         </aside>
-        
-    </div>
-        <footer>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120610.97075024826!2d77.24581395691423!3d19.14741315699179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd1d66bb9d31721%3A0x43892c180155daf1!2sNanded%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1625812460474!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </footer>
+        <h2>Software development</h2>
+      </div>
+      <div>
+        <p class="para">
+          Software development is the process of conceiving, specifying,
+          designing, programming, documenting, testing, and bug fixing involved
+          in creating and maintaining applications, frameworks, or other
+          software components. Software development is a process of writing and
+          maintaining the source code, but in a broader sense, it includes all
+          that is involved between the conception of the desired software
+          through to the final manifestation of the software, sometimes in a
+          planned and structured process. Therefore, software development may
+          include research, new development, prototyping, modification, reuse,
+          re-engineering, maintenance, or any other activities that result in
+          software products.
+          <br>
+          <a  class="enroll" href="./inputtypes.html" target="_parent">
+            <button class="app">Click To Enroll</button></a
+          >
+        </p>
       
-  
-    
-</body>
-<script>
-    styles()
-</script>
+      <div class="enroll">
+        
+        <img src="../extra.png" alt="" width="250px;" />
+      </div>
+    </div>
+
+      <div>
+        <h1><li>Front-End Devpelopment</li></h1>
+      </div>
+
+      <div class="box">
+        <div class="info">
+          <img src="./HTML.gif" alt="" width="180px" height="100px" />
+          <p>
+            The HyperText Markup Language, or HTML is the standard markup
+            language for documents designed to be displayed in a web browser. It
+            can be assisted by technologies such as Cascading Style Sheets (CSS)
+            and scripting languages such as JavaScript.
+          </p>
+        </div>
+        <div class="info">
+          <img src="./CSS.gif" alt="" width="180px" height="100px" />
+          <p>
+            Cascading Style Sheets is a style sheet language used for describing
+            the presentation of a document written in a markup language such as
+            HTML. CSS is a cornerstone technology of the World Wide Web,
+            alongside HTML and JavaScript.
+          </p>
+        </div>
+        <div class="info">
+          <img src="./react1.gif" alt="" width="180px" height="100px" />
+          <p>
+            React is a free and open-source front-end JavaScript library for
+            building user interfaces or UI components. It is maintained by
+            Facebook and a community of individual developers and companies.
+            React can be used as a base in the development of single-page or
+            mobile applications.
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div>
+        <h3>Reach Us Here</h3>
+      </div>
+      <div class="foot">
+        <div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1929804.9126974773!2d73.95399425231065!3d19.144900602369148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd1d7446ed1ca83%3A0xf7aaaf09a7aadfe9!2sPickupBiz%20Learning%20Development%20Center!5e0!3m2!1sen!2sin!4v1626024563579!5m2!1sen!2sin"
+            width="600"
+            height="250"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+        <div class="icon">
+          <li>
+            <a href="" class="ic"
+              ><i class="fab fa-facebook-square" style="color: blue"></i
+              >Facebook</a
+            >
+          </li>
+          <li>
+            <a href="" class="ic"
+              ><i
+                class="fab fa-instagram-square"
+                style="color: rgb(197, 37, 170)"
+              ></i
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a href="" class="ic"
+              ><i class="fab fa-linkedin" style="color: blue"></i>Linkedin</a
+            >
+          </li>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    // background()
+  </script>
 </html>

@@ -9,11 +9,50 @@
         function getStorevalues(){
             var objbody=document.getElementById("body")
             objbody.style=`background-color:${sessionStorage.getItem("favcolor")}`
-
+           
         }
-    </script>va
+    </script>
+
 </head>
+<style>
+    #body{
+        background-image: url(../images/contact-us-2355449_1920.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;
+    }
+    div{
+        
+        margin: 120px auto;
+        text-align: center;
+        border: 2px solid rgb(250, 250, 255);
+        width: 300px;
+        height: 500px;
+        float: right;
+        font-size: larger;
+        color: floralwhite;
+        background-color: rgba(rgb(134, 30, 30), rgb(36, 185, 36), rgb(30, 30, 156), 99);
+    }
+</style>
 <body id="body">
+    <div>
+    <h1 >Form </h1>
+    <label>Name:</label><br>
+    <input type="text" id="name"><br><br>
+    <label>Passward:</label><br>
+    <input type="password" placeholder="enter passward" id="pass"><br><br>
+    <label>Confirm Passward</label><br>
+    <input type="password" placeholder="confirm passward"><br><br>
+    <label>Email:</label><br>
+    <input type="email" placeholder="enter email"><br><br>
+    <label>Gender :</label>
+    <input type="radio" value="male" name="gender">Male
+    <input type="radio" value="female" name="gender">Female
+    <br><br>
+    <button>Submit</button>
+</div>
     
 </body>
 <script>

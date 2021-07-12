@@ -11,6 +11,8 @@
         sessionStorage.setItem("username",document.getElementById("Name").value);
         sessionStorage.setItem("userpass",document.getElementById("Pass").value);
         sessionStorage.setItem("favcolor",document.getElementById("color").value);
+        sessionStorage.setItem("userName",document.getElementById("Name").value)
+        
 
 
     getStorevalues()
@@ -18,53 +20,73 @@
     function getStorevalues(){
         document.getElementById("Name").value=sessionStorage.getItem("username");
         document.getElementById("Pass").value=sessionStorage.getItem("userpass");
-        document.getElementById("color").value=sessionStorage.getItem("favcolor")
+        document.getElementById("color").value=sessionStorage.getItem("favcolor");
+        document.getElementById("Name").value=sessionStorage.getItem("userName");
         document.getElementById("body").style=`background-color:${sessionStorage.getItem("favcolor")}`
+        
+        
 
     
 
     }
 </script>
 <style>
-    form{
-        background-color: rgb(199, 226, 238);
+    
+    div{
+        /* background: linear-gradient(rgb(172, 20, 20),rgb(56, 204, 209),rgb(168, 38, 180)); */
+        background-image: url(../images/pattern-3160023_1920.jpg);
         width: 400px;
         padding: 10px;
         margin: 20px;
+        margin: 100px auto;
+        background-size: cover;
+        margin-top: -20px;
+        
+    
     }
+    form{
+        margin: 20px;
+        padding: 15px;
+        color: rgb(7, 7, 7);
+        font-size: larger;
+    }
+    #body{
+        background: linear-gradient(rgb(243, 243, 241),rgb(15, 15, 15),rgb(245, 235, 235));
+    }
+    h1{
+        text-align: center;
+        font-size: 50px;
+        color: rgb(8, 8, 8);
+    }
+    label{
+        width: 100px;
+        display: inline-block;
+        /* text-align:justify; */
+        font-size: larger;
+    }
+    
 </style>
-<!-- */inputtypes=
-1.date
-2.date time location
-3.url
-4.email
-5.file
-6.month
-7.color
-8.weel
-9.number-min,max,step 
-*/ -->
+
 <body id="body">
-    <h1 style="color: cornflowerblue; ">input types </h1>
-    <form>
-        <label>Name:</label>
+    <h1>Sign Up </h1>
+
+    <div>
+        <form >
+        <label>Name :   </label>
         <input type="text" id="Name"> 
     </form>
     <form>
         <label>Passward:</label>
         <input type="password" placeholder=" Enter Your Password" id="Pass">
     </form>
-    <form>
-        <label>Qualification:</label>
-        <input type="text">
-    </form>
+    
     <form>
     <label>Gender:</label>
     <input type="radio"name="gender" value="male">male
     <input type="radio" name="gender" value="female">Female
 </form>
 <form >
-    <label>hobbies:</label>
+    <label>Hobbies:</label>
     <input type="checkbox" name="eating">eating
     <input type="checkbox" name="coding">coding
     <input type="checkbox" name="movie">movie
@@ -74,17 +96,17 @@
     <input type="date">
 
 </form>
-<form >
-    <label> URL:</label>
-    <input type="url">
-</form>
+
 <form>
-    <label>color</label>
+    <label>Color:</label>
     <input type="color" id="color">
 
 </form>
-
+<form>
 <button  onclick="setStorevalues()">Submit</button> <button>Cancel</button>
+</form>
+
+</div>
     
 </body>
 <script>
