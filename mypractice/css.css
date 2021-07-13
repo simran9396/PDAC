@@ -1,0 +1,69 @@
+/* .h1{
+    margin: 50px;
+   background: linear-gradient( 45deg,blue,rgb(146, 109, 109),rgb(216, 51, 78));
+   
+} */
+.h2{
+    margin: 20px 30px 40px;
+    background: linear-gradient(45deg,red,rgb(190, 114, 114),blue);
+}
+.h3{
+    margin: 20px 40px;
+    background: linear-gradient(45deg,rgb(196, 65, 137),rgb(201, 134, 134),rgb(226, 188, 15));
+}
+.h4{
+    margin: 10px 20px 30px 40px;
+    background: linear-gradient(45deg,rgb(81, 194, 37),black,rgb(180, 125, 43));
+}
+.h1{
+    padding: 50px;
+   background: linear-gradient( 45deg,blue,rgb(146, 109, 109),rgb(216, 51, 78));
+   
+}
+.h2{
+    padding: 20px 30px 40px;
+    background: linear-gradient(45deg,red,rgb(235, 160, 160),blue);
+}
+.h3{
+    padding: 20px 40px;
+    background: linear-gradient(45deg,rgb(196, 65, 137),rgb(201, 134, 134),rgb(226, 188, 15));
+}
+.h4{
+    padding: 10px 20px 30px 40px;
+    background: linear-gradient(45deg,rgb(81, 194, 37),rgb(236, 164, 164),rgb(180, 125, 43));
+}
+body{
+    background-image: url(../HTML/day4/images/pattern-3160023_1920.jpg);
+}
+.solid{
+    border: 2px solid rgb(2, 2, 2);
+    font-size: larger;
+    margin: 20px;
+    padding: 20px;
+    background: linear-gradient(45deg,rgb(250, 192, 85) , rgb(250, 160, 223) , rgb(188, 115, 236));
+}
+.dot{
+    border: 2px dotted rgb(26, 24, 24);
+    font-size: larger;
+    margin: 20px;
+    padding: 20px;
+    background: linear-gradient(45deg,rgb(224, 79, 181) , rgb(170, 182, 65) , rgb(101, 32, 148));
+
+}
+.double{
+    border: 4px double rgb(20, 20, 20);
+    font-size: larger;
+    margin: 20px;
+    padding: 20px;
+    background: linear-gradient(45deg,rgb(140, 210, 231) , rgb(250, 160, 223) , rgb(188, 115, 236));
+}
+.content{
+    text-align: center
+    ;
+}
+.headings{
+    background: linear-gradient(45deg,rgb(140, 210, 231) , rgb(250, 160, 223) , rgb(188, 115, 236));
+    text-align: center;
+    width: 120px;
+    margin: auto;
+}

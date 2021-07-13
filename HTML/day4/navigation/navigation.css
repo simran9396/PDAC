@@ -10,7 +10,7 @@
     
 }
 .main h2 {
-    color:black;
+    color:rgb(68, 66, 66);
     font-size: 60px;
     text-align: center;
     width: 100%;
@@ -24,6 +24,7 @@
 nav{
     /* padding: 20px; */
     background-color: black;
+    opacity: 0.5;
     display: flex;
     border-radius: 8px;
     width: 100%;
@@ -38,7 +39,7 @@ a{
     text-decoration: none;
     font-size: 25px;
 }
-a:hover{
+.topnav:hover{
     color:rgb(8, 8, 8);
     background-color: white;
     border-radius: 5px;
@@ -56,9 +57,10 @@ button{
 h1{
     text-align: center;
     margin-right: 350px;
-    color: rgb(19, 18, 18);
+    color: rgb(48, 47, 47);
     text-decoration: grey underline;
-    margin-top: 40px;
+    margin-top: 80px;
+    
 }
 
 
@@ -73,6 +75,7 @@ h1{
 }
 .main aside{
     background-color: black;
+    opacity: 0.5;
     width: 300px;
     height: 800px;
     padding: 20px;
@@ -86,6 +89,7 @@ h1{
 }
 .para{
     width: 1000px;
+    
     margin-top: -600px;
     margin-left: 300px;
     text-align: justify;
@@ -126,7 +130,7 @@ aside a{
     padding: 20px;
     border: 1px solid black;
     text-align: center;
-    height: 400px;
+    height: 420px;
     margin-top:30px;
     margin: 60px;
     box-shadow: 0 0 20px;
@@ -141,22 +145,33 @@ p{
     margin-left: 250px;
     /* margin-top: -400px; */
 }
-.app{
+button.app{
   /* margin: auto; */
   width: 300px;
   height: 80px;
   font-size: 20px;
   border-radius: 20px;
-  justify-content: center;
+  /* justify-content: center; */
   float: none;
-    
+  margin-top: 150px;
+  margin-left: 250px;
+
+}
+button.app:hover{
+    background-color:grey;
+    color: rgb(12, 11, 11);
 }
 .enroll{
-    margin: auto;
+    margin: auto;    
 }
-.app:hover{
-   
-    color: black;
+.enroll img{
+    float: right;
+    margin-top: -200px;
+    margin-right: 50px;
+}
+.enroll:hover{
+   background-color: none !important;
+    color: white;
 }
 .end{
     text-align: center;
