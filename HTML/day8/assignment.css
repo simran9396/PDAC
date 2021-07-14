@@ -1,0 +1,99 @@
+
+nav{
+    background-color: rgb(188 184 143);
+    font-size: 25px;
+    padding: 10px;
+   
+    display: flex;
+    justify-content: flex-start;
+}
+a{
+    padding: 20px;
+    margin: 20px 20px 0 20px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-family: 'Pacifico', cursive;
+    
+}
+#section3{
+    background-color: rgb(196, 128, 128);
+}
+
+h1{
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    
+  
+    
+}
+/* -------------table-------------- */
+table{
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid black;
+    margin: auto;
+}
+th{
+    padding: 20px;
+    margin: 20px;
+    font-weight: bolder;
+    background-color: burlywood;
+    border-radius: 15px;
+
+}
+td{
+    text-align: center;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+    
+}
+tr:nth-child(even){
+    background-color: cadetblue;
+}
+tr:nth-child(odd){
+    background-color: rgb(245, 143, 245);
+}
+#section1{
+    /* background:linear-gradient(45deg,pink,white,blue); */
+    background-color: rgb(180, 247, 248);
+    background-size: cover;
+    margin-top: -22px;
+}
+#section2{
+    background-color: rgb(178, 210, 231);
+}
+.flot{
+    display: inline-flex;
+    font-family:'Pacifico', cursive;
+    font-size: 20px;
+}
+.flot p{
+    padding: 10px;
+    margin-top: -20px;
+}
+figure{
+    display: inline-block;
+}
+figcaption{
+    background-color: rgb(50, 66, 119);
+    color: slateblue;
+    text-align: center;
+}
+.footer{
+    background-color: rgb(236, 226, 167);
+}
+h2{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+caption{
+    font-size: 20px;
+}
+#section3{
+    background-color: rgb(131, 211, 200);
+}
+
