@@ -47,6 +47,42 @@ a{
     background-color: white;
     border-radius: 5px;
 }
+/* -----------------dropdowns------------------------------- */
+.dropdown a{
+    display:block;
+
+}
+.droplist a{
+    border: 2px solid;
+    padding: 2px;
+    color: white;
+    font-size: small;
+}
+.dropdown{
+    display: inline-block;
+}
+.droplist{
+   position: absolute;
+padding: 5px;
+width: 100px;
+display: none;
+
+
+}
+.droplist:hover a{
+    background-color: darkseagreen;
+    color: black\;
+}
+.dropdown:hover .droplist{
+    display:block;
+    text-align: center;
+    background: rgb(23, 24, 24);
+    
+    margin-top: 10px;
+
+}
+
+/* -------------------------------------------------------------------------- */
 button{
     height: 30px;
     width: 120px;

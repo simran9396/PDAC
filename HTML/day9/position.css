@@ -1,0 +1,19 @@
+div{
+    background-color: darksalmon;
+    width: 300px;
+    color: black;
+    text-align: center;
+    height: 200px;
+}
+.para1{
+    position: static;
+}
+.para2{
+    position: relative;
+}
+.para3{
+    position: absolute;
+}
+.para4{
+    position:fi
+}
