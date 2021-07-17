@@ -1,0 +1,74 @@
+h1{
+    font-family: cursive;
+    color: blue;
+    text-align: center;
+}
+h2{
+    text-align: center;
+    font-size: 25px;
+    display: none;
+}
+img{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+/* ----------------------mobile view-------------------------------- */
+
+@media (max-width:500px) {
+    body{
+        background: linear-gradient(55deg,pink,blue,yellow);
+
+    }
+    h2:nth-child(1){
+        display: block;
+    }
+    p{
+        color: burlywood;
+    }
+}
+/* --------------------------tabscreen------------- */
+@media (min-width:501px) and (max-width:800px) {
+    body{
+        background: linear-gradient(60deg,yellow,pink,blue);
+    }
+    h2:nth-child(2){
+        display: block;
+    }
+    p{
+        color: brown;
+    }
+    image{
+        transition:width 2s,height 2s,transform 2s;
+    }
+    image:hover{
+        transform: rotate(150deg);
+    }
+}
+/* -------------------------------laptop------ */
+@media (min-width:801px) and (max-width:1200px)
+{
+  body{
+    background-image: url(../day4/images/old-people-616718_1920.jpg);
+}
+h2:nth-child(3){
+    display: block;
+}
+p{
+    color: rgb(163, 241, 193);
+}
+} 
+/* -------------------------XL screen---------------------- */
+@media (min-width:1201px)
+{
+  body{
+    background: linear-gradient(60deg,rgb(235, 124, 207),rgb(73, 180, 135),rgb(236, 181, 97));
+}
+h2:nth-child(4){
+    display: block;
+}
+p{
+    color: rgb(245, 188, 237);
+}
+
+}

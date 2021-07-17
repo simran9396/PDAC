@@ -1,0 +1,19 @@
+div{
+    padding: 20px;
+    margin: 20px;
+    display:flex;
+    flex-wrap: nowrap;
+   
+
+}
+h2{
+    width: 300px;
+    border: 2px solid blue;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    background-color: aquamarine;
+
+
+
+}

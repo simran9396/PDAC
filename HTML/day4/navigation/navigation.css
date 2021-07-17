@@ -1,12 +1,27 @@
+body{
+    width: 100%;
+    height: 100%;
+}
 .back{
     background:linear-gradient(140deg,rgb(178, 203, 226),rgb(240, 215, 238),rgb(116, 116, 111)) ;
    
     /* background-position:center; */
      background-size: cover; 
-    /* object-fit: cover;   */ 
+    object-fit: cover;   
     /* width: 100%; */
     height:100%;
+    width: 100%;
     /* background-attachment: fixed; */
+    
+}
+@media (max-width:500px) {
+    .back{
+        background: linear-gradient(130deg,pink,purple,teal);
+    }
+    .main h2 {
+        color: cornflowerblue;
+        font-size: 30px;
+    }
     
 }
 .main h2 {
@@ -181,7 +196,8 @@ p{
 }
 .box{
     display: inline-flex;
-    margin-left: 250px;
+    margin-left: 130px;
+    
     /* margin-top: -400px; */
 }
 button.app{
