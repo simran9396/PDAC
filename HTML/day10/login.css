@@ -1,0 +1,36 @@
+form{
+  
+    font-size: larger;
+    
+    margin: 15px;
+    padding: 20px;
+}
+body{
+    background-image: url(../day10/background.jpg);
+    background-size: cover;
+}
+div{
+    background-color: rgba(255, 250, 250, 0.1);
+    width: 400px;
+    height: 500px;
+    margin: 150px auto;
+    box-shadow: 0 0 10px black;
+    border-radius: 15px;
+    text-align: center;
+
+}
+img{
+    margin-top: -100px;
+    align-items: center;
+}
+button{
+    background: linear-gradient(60deg,skyblue,white,teal);
+    width: 90px;
+    height: 30px;
+    border-radius: 5px;
+}
+input{
+    outline: none;
+    border-radius: 10px;
+    height: 20px;
+    text-align: center;
